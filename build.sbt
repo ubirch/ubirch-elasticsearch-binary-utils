@@ -100,10 +100,6 @@ lazy val logging = Seq(
   slf4j,
   logbackClassic
 )
-lazy val depLog4jToSlf4j = Seq(
-  log4jApi,
-  log4jToSlf4j
-)
 
 
 libraryDependencies ++= Seq(
@@ -116,4 +112,4 @@ libraryDependencies ++= Seq(
   ubirchUtilJson,
   ubirchUtilUuid,
   scalaTest % "test"
-) ++ json4sBase ++ logging ++ depLog4jToSlf4j
+) ++ json4sBase ++ logging
