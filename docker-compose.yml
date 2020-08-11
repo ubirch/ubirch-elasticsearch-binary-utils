@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  elasticsearch-binary-utils:
+    container_name: elasticsearch-binary-utils
+    image: elasticsearch:6.7.1
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - "cluster.name=elasticsearch"
+    logging:
+      driver: none
